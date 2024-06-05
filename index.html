@@ -1,19 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WoukieBox2</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Active online software page - Template</title>
+    <meta
+      property="og:title"
+      content="Active online software page - Template"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+       }
+    </style>
   </head>
   <body>
-    <main>
-      <h1>WoukieBox2</h1>  
-    </main>
-    <a class="setup" href="https://github.com/Woukie/WoukieBox2/releases/latest">Windows Installer</a>
-	  <script src="index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <header class="home-header">
+            <div id="mobile-menu" class="home-mobile-navigation">
+              <img
+                alt="pastedImage"
+                src="public/pastedimage-no9b-1500h.png"
+                class="home-logo"
+              />
+              <div class="home-links">
+                <span class="Link">Solutions</span>
+                <span class="Link">How it works</span>
+                <span class="Link">Prices</span>
+              </div>
+              <div id="close-mobile-menu" class="home-close-mobile-menu">
+                <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="home-desktop-navigation">
+              <nav class="home-centered">
+                <div class="home-left">
+                  <img
+                    alt="image"
+                    src="public/pastedimage-no9b-1500h-200h.png"
+                    class="home-image"
+                  />
+                </div>
+              </nav>
+            </div>
+            <div>
+              <div class="home-container2">
+                <script defer="">
+                  /*
+                  Mobile menu - Code Embed
+                  */
+
+                  // Mobile menu
+                  const mobileMenu = document.querySelector('#mobile-menu')
+
+                  // Buttons
+                  const closeButton = document.querySelector('#close-mobile-menu')
+                  const openButton = document.querySelector('#open-mobile-menu')
+
+                  // On openButton click, set the mobileMenu position left to -100vw
+                  openButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(0%)'
+                  })
+
+                  // On closeButton click, set the mobileMenu position to 0vw
+                  closeButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(100%)'
+                  })
+                </script>
+              </div>
+            </div>
+          </header>
+          <header class="home-content">
+            <h1 class="home-text03">
+              Digital lubricant for easy communication
+            </h1>
+            <p class="home-text04">
+              <span>I fucking hate this stupid fucking website</span>
+              <br />
+            </p>
+            <div class="home-get-started">
+              <span class="home-text07">
+                <span>Download</span>
+                <br />
+              </span>
+            </div>
+          </header>
+          <div class="home-dashboard-preview">
+            <div class="home-outline">
+              <img
+                alt="pastedImage"
+                src="public/untitled-1000h.png"
+                loading="lazy"
+                class="home-image1"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="home-features">
+          <div class="home-title">
+            <span class="home-text10">Downloads</span>
+            <span class="home-text11">
+              <span>currently only supports Windows</span>
+              <br />
+            </span>
+          </div>
+          <div class="home-cards">
+            <div class="home-container3">
+              <div class="home-publish card">
+                <span class="home-text14">Windows Installer</span>
+                <span class="home-text15">
+                  <span>x64 and x86 architecture</span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-publish1 card">
+                <span class="home-text18">Portable .exe</span>
+                <span class="home-text19">
+                  <span>Put it on a USB stick!</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-container4">
+              <div class="home-publish2 card">
+                <span class="home-text22">Linux</span>
+                <span class="home-text23">
+                  <span>Coming soon...</span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-publish3 card">
+                <span class="home-text26">Web</span>
+                <span class="home-text27">
+                  <span>Coming soon...</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-container5">
+              <div class="home-publish4 card">
+                <span class="home-text30">Android</span>
+                <span class="home-text31">
+                  <span>Coming soon...</span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-publish5 card">
+                <span class="home-text34">Apple</span>
+                <span class="home-text35">
+                  <span>Coming soon...</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <div class="home-top">
+            <div class="home-left1">
+              <span class="home-text38">I don't have a newsletter</span>
+              <div class="home-subscription">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="home-textinput input"
+                />
+                <div class="home-subscribe">
+                  <span class="home-text39">Subscribe</span>
+                </div>
+              </div>
+              <span class="home-text40">
+                <span class="home-text41">Watch burger planet on Twitch</span>
+                <br />
+              </span>
+              <div class="home-contact">
+                <span class="home-text43">Contact</span>
+                <a
+                  href="mailto:use@active-app.com?subject=Support"
+                  class="home-link"
+                >
+                  you cant
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home-bottom">
+            <img
+              alt="image"
+              src="public/pastedimage-no9b-1500h-200h.png"
+              class="home-image2"
+            />
+            <span class="home-text44">
+              <span class="home-text45">
+                Copyright © WoukieNet - current year
+              </span>
+              <br />
+            </span>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
