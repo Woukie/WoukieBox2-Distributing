@@ -4,7 +4,12 @@ function GetLatestReleaseInfo() {
     "https://api.github.com/repos/Woukie/WoukieBox2/releases/latest"
   ).done(function (release) {
     UpdateDownloadButton(release, ".exe", $(".setup"));
-    UpdateDownloadButton(release, "portable.zip", $(".portable"));
+    UpdateDownloadButton(
+      release,
+      "Portable.zip",
+      "portable.zip",
+      $(".portable")
+    );
   });
 }
 
