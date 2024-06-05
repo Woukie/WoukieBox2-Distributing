@@ -15,7 +15,7 @@
   padding-left: var(--dl-space-space-sevenunits);
   padding-right: var(--dl-space-space-sevenunits);
   flex-direction: column;
-  background-color: 1D2023;
+  background-color: #1d2023;
 }
 .home-header {
   width: 100%;
@@ -86,7 +86,7 @@
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: row;
   justify-content: space-between;
-  background-color: #272D34;
+  background-color: #272d34;
 }
 .home-left {
   height: 100%;
@@ -152,20 +152,20 @@
   display: flex;
   position: absolute;
   align-items: center;
-  border-color: #272D34;
+  border-color: #272d34;
   border-width: 30px;
   border-radius: 48px;
   flex-direction: column;
-  background-color: #272D34;
+  background-color: #272d34;
 }
 .home-outline {
   display: flex;
   align-items: center;
-  border-color: #3B4858;
+  border-color: #3b4858;
   border-width: 20px;
   border-radius: 24px;
   flex-direction: column;
-  background-color: #3B4858;
+  background-color: #3b4858;
 }
 .home-image1 {
   width: 900px;
@@ -181,7 +181,7 @@
   padding-left: var(--dl-space-space-sevenunits);
   padding-right: var(--dl-space-space-sevenunits);
   flex-direction: column;
-  background-color: EFF0F2;
+  background-color: #eff0f2;
 }
 .home-title {
   display: flex;
@@ -338,7 +338,7 @@
   width: 100%;
   display: flex;
   max-width: 1200px;
-  border-color: #3B3B3B;
+  border-color: #3b3b3b;
   flex-direction: column;
   padding-bottom: 54px;
   justify-content: space-between;
@@ -391,7 +391,7 @@
   flex-direction: row;
   padding-bottom: 16px;
   justify-content: flex-start;
-  background-color: #5228F5;
+  background-color: #5228f5;
 }
 .home-subscribe:hover {
   background-color: #000;
@@ -437,7 +437,7 @@
 .home-text44 {
   color: rgb(104, 104, 104);
 }
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .home-hero {
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
@@ -538,12 +538,12 @@
     margin-bottom: 0px;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .home-hero {
     height: 620px;
     position: relative;
     padding-bottom: 180px;
-    background-color: #1D2023;
+    background-color: #1d2023;
   }
   .home-desktop-navigation {
     padding-left: 0px;
@@ -674,7 +674,7 @@
     padding-right: var(--dl-space-space-twounits);
   }
 }
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .home-hero {
     padding-bottom: 160px;
   }
@@ -686,7 +686,7 @@
     justify-content: center;
   }
   .home-text04 {
-    color: #EEE9FE;
+    color: #eee9fe;
   }
   .home-get-started {
     width: 100%;
