@@ -118,7 +118,7 @@
   line-height: 80px;
 }
 .home-text04 {
-  color: rgb(238, 233, 254);
+  color: rgb(245, 245, 245);
   font-size: 20px;
   max-width: 600px;
   margin-top: 16px;
@@ -569,7 +569,7 @@
     line-height: 36px;
   }
   .home-text04 {
-    color: rgb(238, 233, 254);
+    color: rgb(245, 245, 245);
     font-size: 16px;
     margin-top: var(--dl-space-space-unit);
     line-height: 24px;
@@ -686,7 +686,7 @@
     justify-content: center;
   }
   .home-text04 {
-    color: #eee9fe;
+    color: rgb(245, 245, 245);
   }
   .home-get-started {
     width: 100%;
