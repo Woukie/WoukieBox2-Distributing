@@ -29696,7 +29696,7 @@ while(true)switch(s){case 0:if($.ao==null)A.aF7()
 $.ao.toString
 q=$.aQD()
 p=A.b([],t.C)
-q=new A.M1("http://localhost:8080/",p,q,!0,new A.aa8(new A.S8()),B.L5,B.KZ)
+q=new A.M1("https://api.woukiebox.woukie.net/",p,q,!0,new A.aa8(new A.S8()),B.L5,B.KZ)
 A.aGs()
 q.at=new A.pW(A.aQ(t.F))
 p=t.Ui
